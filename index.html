@@ -457,7 +457,7 @@
                 }
             }
             if (running == true)
-                xhr[id] = $.get("https://sao.snu.ac.kr/datawaster/dummy15?" + Math.random(), function() {
+                xhr[id] = $.get("https://speed.cloudflare.com/__down?bytes=500000000?" + Math.random(), function() {
                     return download(id);
                 });
         };
