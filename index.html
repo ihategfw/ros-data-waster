@@ -457,7 +457,8 @@
                 }
             }
             if (running == true)
-                xhr[id] = $.get("https://speed.cloudflare.com/__down?bytes=1000000?" + Math.random(), function() {
+                // https://speed.cloudflare.com/__down?bytes=1000000?
+                xhr[id] = $.get("http://cachefly.cachefly.net/1mb.test?" + Math.random(), function() {
                     return download(id);
                 });
         };
