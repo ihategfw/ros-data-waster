@@ -458,7 +458,7 @@
             }
             if (running == true)
                 // https://speed.cloudflare.com/__down?bytes=1000000?
-                xhr[id] = $.get("// https://speed.cloudflare.com/__down?bytes=100000000?" + Math.random(), function() {
+                xhr[id] = $.get("https://speed.cloudflare.com/__down?bytes=100000000?" + Math.random(), function() {
                     return download(id);
                 });
         };
